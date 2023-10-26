@@ -16,9 +16,13 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
       backgroundColor: const Color.fromARGB(255, 5, 50, 80),
       body: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
+        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
         child:
             Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           const Text(
